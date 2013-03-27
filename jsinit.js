@@ -4,3 +4,4 @@ for (var i = 0; i< x.length; i++)
 
 
 // besser: $('tr').find('td')
+//auch nicht schlecht: $('tr').find('td')[1].innerHTML.slice(x+7,x+40)
