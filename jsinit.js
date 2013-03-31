@@ -11,6 +11,7 @@ for (var i = 0; i< t.length; i++)
  {var k = t[i]; var di = k.getElementsByTagName('td'); 
  for (var ei = 0; ei< di.length; ei++)
  {
- if(di[ei] != null && di[ei].innerText.match('geo'))
- {console.log('we got a geo')}}
+ if(di[ei].innerHTML.match('geo'))
+ {var c = di[ei].innerHTML.indexof('geohack');
+ di[ei].slice(c+7,c+40)}}
  }
