@@ -11,7 +11,25 @@ for (var i = 0; i< t.length; i++)
  {var k = t[i]; var di = k.getElementsByTagName('td'); 
  for (var ei = 0; ei< di.length; ei++)
  {
+  if(di[ei].innerHTML.match('geo'))
+ {console.log('we got a geo ' + ei + '  ' + i)}}
+ }
+ 
+
+for (var i = 0; i< t.length; i++)
+ {var k = t[i]; var di = k.getElementsByTagName('td'); 
+ for (var ei = 0; ei< di.length; ei++)
+ {
  if(di[ei].innerHTML.match('geo'))
- {var c = di[ei].innerHTML.indexof('geohack');
+ {var c = di[ei].innerHTML.indexOf('geohack');
  di[ei].slice(c+7,c+40)}}
  }
+ 
+ for (var i = 0; i< t.length; i++)
+ {var k = t[i]; var di = k.getElementsByTagName('td'); 
+ for (var ei = 0; ei< di.length; ei++)
+ {
+  if(di[ei].innerHTML.match('geohack'))
+ {var c = di[ei].innerHTML;
+ c.slice(c.lastIndexOf('params')+7,c.lastIndexOf('params')+30)}}
+ } //nur ein output ?
