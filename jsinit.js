@@ -33,3 +33,8 @@ for (var i = 0; i< t.length; i++)
  {var c = di[ei].innerHTML;
  c.slice(c.lastIndexOf('params')+7,c.lastIndexOf('params')+30)}}
  } //nur ein output ?
+
+
+
+jo: das die map die referenziert werden soll (letzter Parameter 0,0,0,0 passt scho - zumindest bekommt man so die Street View hin)
+https://maps.google.de/maps?t=h&z=21&layer=c&cbll=48.137572,11.462496&cbp=0,0,0,0
