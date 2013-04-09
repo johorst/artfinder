@@ -23,7 +23,7 @@ for (var i = 0; i< t.length; i++)
  if(di[ei].innerHTML.match('geo'))
  {var c = di[ei].innerHTML.indexOf('geohack');
  di[ei].slice(c+7,c+40)}}
- }
+ } //thats it (i guess) aber nur für chrome, oder?
  
  for (var i = 0; i< t.length; i++)
  {var k = t[i]; var di = k.getElementsByTagName('td'); 
