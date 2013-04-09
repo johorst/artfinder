@@ -1,38 +1,18 @@
-x = $('tr');
-for (var i = 0; i< x.length; i++)
-{console.log( x.slice(i,i+1).innerHTML);}
-
-
-// besser: $('tr').find('td')
-//auch nicht schlecht: $('tr').find('td')[1].innerHTML.slice(x+7,x+40)
-// for (var i = 5; i< t.length; i++){var k = t[i]; console.log(k.getElementsByTagName('td'))} //noch  besser
-
+t = $('tr');
+//console.log(t.length + " anzahl elemente in t")
 for (var i = 0; i< t.length; i++)
- {var k = t[i]; var di = k.getElementsByTagName('td'); 
+ {var k = t[i]; var di = k.getElementsByTagName('td');
+ //console.log(di.length + " anzahl elemente in tds in tr")
  for (var ei = 0; ei< di.length; ei++)
  {
   if(di[ei].innerHTML.match('geo'))
- {console.log('we got a geo ' + ei + '  ' + i)}}
+   {//tut nichts, warum?if(di[ei].innerText){console.log(di[ei].innerText);}
+   var c = di[ei].innerHTML.indexOf('params');
+   console.log(di[ei].innerHTML.slice(c+7,c+30));
+   //console.log('got tr with matching GEO').
+   }
+  }
  }
- 
-
-for (var i = 0; i< t.length; i++)
- {var k = t[i]; var di = k.getElementsByTagName('td'); 
- for (var ei = 0; ei< di.length; ei++)
- {
- if(di[ei].innerHTML.match('geo'))
- {var c = di[ei].innerHTML.indexOf('geohack');
- di[ei].slice(c+7,c+40)}}
- } //thats it (i guess) aber nur für chrome, oder?
- 
- for (var i = 0; i< t.length; i++)
- {var k = t[i]; var di = k.getElementsByTagName('td'); 
- for (var ei = 0; ei< di.length; ei++)
- {
-  if(di[ei].innerHTML.match('geohack'))
- {var c = di[ei].innerHTML;
- c.slice(c.lastIndexOf('params')+7,c.lastIndexOf('params')+30)}}
- } //nur ein output ?
 
 
 
