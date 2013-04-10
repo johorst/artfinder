@@ -22,6 +22,7 @@ for (var i = 0; i< t.length; i++)
  if(Beschreibung == "")
  {console.log("Name: " + Name +  "   " + "; Params: " + Params);}
  else{console.log("Name: " + Name +  "   " + "; Beschreibung: " + Beschreibung.slice(0,12)+ "; Params: " + Params);}
+ console.log("https://maps.google.de/maps?t=h&z=21&layer=c&ll="+Params.slice(0,8)+","+Params.slice(12,20));
 }
  
 
