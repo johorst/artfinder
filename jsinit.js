@@ -1,21 +1,29 @@
 t = $('tr');
 //console.log(t.length + " anzahl elemente in t")
+var Name, Beschreibung, Params, Output;
 for (var i = 0; i< t.length; i++)
  {var k = t[i]; var di = k.getElementsByTagName('td');
- 
- for (var ei = 0; ei< di.length; ei++)
+ Name = "";
+ Beschreibung = "";
+ Params ="";
+ Output = "";
+ for (var ei = 0; ei< di.length - 1; ei++)
  {
   var jo = di[ei];
-  console.log(jo.textContent + " blibla")
+  if(jo.textContent.length > 30)
+  {Beschreibung += " " + jo.textContent.replace("(♁Standort)","");}
+  else{Name += " " + jo.textContent.replace("(♁Standort)","");}
   if(di[ei].innerHTML.match('geo'))
-   {//tut nichts, warum?if(di[ei].innerText){console.log(di[ei].innerText);}
+   {
    var c = di[ei].innerHTML.indexOf('params');
-   console.log(di[ei].innerHTML.slice(c+7,c+30));
-   //console.log('got tr with matching GEO').
-   }
-  }
+   Params = di[ei].innerHTML.slice(c+7,c+30);   
+   }    
  }
-
+ if(Beschreibung == "")
+ {console.log("Name: " + Name +  "   " + "; Params: " + Params);}
+ else{console.log("Name: " + Name +  "   " + "; Beschreibung: " + Beschreibung.slice(0,12)+ "; Params: " + Params);}
+}
+ 
 
 
 jo: das die map die referenziert werden soll (letzter Parameter 0,0,0,0 passt scho - zumindest bekommt man so die Street View hin)
