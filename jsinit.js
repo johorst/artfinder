@@ -23,6 +23,7 @@ for (var i = 0; i< t.length; i++)
  {console.log("Name: " + Name +  "   " + "; Params: " + Params);}
  else{console.log("Name: " + Name +  "   " + "; Beschreibung: " + Beschreibung.slice(0,12)+ "; Params: " + Params);}
  console.log("https://maps.google.de/maps?t=h&z=21&layer=c&ll="+Params.slice(0,8)+","+Params.slice(12,20));
+ //gegenbeispiel, wenn params nicht gemäß 2 Vorkomma und 6 Nachkommestellen oder so sind: http://de.wikipedia.org/wiki/Liste_der_Kulturdenkm%C3%A4ler_in_Frankfurt-Altstadt
 }
  
 
