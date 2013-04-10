@@ -2,9 +2,11 @@ t = $('tr');
 //console.log(t.length + " anzahl elemente in t")
 for (var i = 0; i< t.length; i++)
  {var k = t[i]; var di = k.getElementsByTagName('td');
- //console.log(di.length + " anzahl elemente in tds in tr")
+ 
  for (var ei = 0; ei< di.length; ei++)
  {
+  var jo = di[ei];
+  console.log(jo.textContent + " blibla")
   if(di[ei].innerHTML.match('geo'))
    {//tut nichts, warum?if(di[ei].innerText){console.log(di[ei].innerText);}
    var c = di[ei].innerHTML.indexOf('params');
