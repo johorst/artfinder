@@ -45,3 +45,5 @@ for (var i = 0; i< t.length; i++)
 }
 jo: das die map die referenziert werden soll (letzter Parameter 0,0,0,0 passt scho - zumindest bekommt man so die Street View hin)
 https://maps.google.de/maps?t=h&z=21&layer=c&cbll=48.137572,11.462496&cbp=0,0,0,0
+cih glaub, dass die BING Maps weniger zickig sind:
+http://msdn.microsoft.com/en-us/library/ee692180.aspx.... mal sehen
