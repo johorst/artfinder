@@ -47,3 +47,6 @@ jo: das die map die referenziert werden soll (letzter Parameter 0,0,0,0 passt sc
 https://maps.google.de/maps?t=h&z=21&layer=c&cbll=48.137572,11.462496&cbp=0,0,0,0
 jaaa, wahrscheinlich: <iframe width="200" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
          src="http://dev.virtualearth.net/embeddedMap/v1/ajax/birdseye?zoomLevel=22&center=48.3701_10.905&pushpins=47.5_-122.5"/>
+         
+         
+Query params: {llE: {$gt: a - 0.001, $lt: a + 0.001}, llN: {$gt: b - 0.001, $lt: b + 0.001}}
