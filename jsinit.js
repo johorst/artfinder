@@ -50,3 +50,5 @@ jaaa, wahrscheinlich: <iframe width="200" height="150" frameborder="0" scrolling
          
          
 Query params: {llE: {$gt: a - 0.001, $lt: a + 0.001}, llN: {$gt: b - 0.001, $lt: b + 0.001}}
+
+http://www.jaqe.de/2009/01/16/url-parameter-mit-javascript-auslesen/ <<< ad Parameter aus aktueller Seite verwerten
