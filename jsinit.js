@@ -32,9 +32,9 @@ for (var i = 0; i< t.length; i++)
  jQuery.post( 'http://localhost:4711/api/books', {
     'title': Name,
     'author': Beschreibung,
-    'releaseDate': new Date( 2008, 4, 1 ).getTime(),
- 'llN': llN,
-	'llE': llE
+    //'releaseDate': new Date( 2008, 4, 1 ).getTime(),
+    'llN': llN,
+    'llE': llE
  }, function(data, textStatus, jqXHR) {
     console.log( 'Post response:' );
     console.dir( data );
