@@ -29,7 +29,7 @@ for (var i = 0; i< t.length; i++)
  {console.log("Name: " + Name +  "   " + "; Params: " + llN + "    " + llE);}
  else{console.log("Name: " + Name +  "   " + "; Beschreibung: " + Beschreibung + "; Params: " + llN + "    " + llE);}
  console.log("https://maps.google.de/maps?t=h&z=21&layer=c&ll="+llN+","+llE);
- jQuery.post( 'http://localhost:4711/api/books', {
+ jQuery.post( 'http://192.168.1.54:4711/api/books', {
     'title': Name,
     'author': Beschreibung,
     //'releaseDate': new Date( 2008, 4, 1 ).getTime(),
